@@ -25,4 +25,16 @@ package org.testing.Lab1.Ex10;
  * Next, please display all company data on the standard output (hint: toString() methods will be helpful) and average age computed by calling getAverageAge() method on Company type instance.
  */
 public class Main {
+  public static void main (String[] args) {
+    Employee em1 = new Employee("A", "F", 10);
+    Employee em2 = new Employee("B", "G", 11);
+    Employee em3 = new Employee("C", "H", 12);
+    Employee em4 = new Employee("D", "J", 13);
+    Employee em5 = new Employee("E", "K", 14);
+    Employee[] employees = new Employee[] {em1, em2, em3, em4, em5};
+    Company c = new Company("Skerdi");
+    c.setEmployees(employees);
+    System.out.println(c.getAverageAge());
+    System.out.println(c);
+  }
 }
